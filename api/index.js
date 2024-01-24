@@ -1,14 +1,18 @@
-const express = require('express');
-const cors = require('cors');
-const mysql = require('mysql');
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import express from 'express';
 
-const db=mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"12345",
-    database:"test",
-    port:"3306",
-})
+
+dotenv.config();
+
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log('MongoDb is connected');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 const app=express();
 app.listen(3000,()=>{
