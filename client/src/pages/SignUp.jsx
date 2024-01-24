@@ -42,7 +42,7 @@ export default function SignUp() {
       <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
         {/* left */}
         <div className='flex-1'>
-          <img src="/image/cuet_pic.png" alt="Your Image" class="max-w-full h-auto"/>
+          <img src="/image/cuet_pic.png" alt="Your Image" class="w-auto lg:max-w-min h-auto"/>
         </div>
         {/* right */}
 
@@ -76,7 +76,7 @@ export default function SignUp() {
               />
             </div>
             <Button
-              gradientDuoTone='purpleToPink'
+              gradientDuoTone='greenToBlue'
               type='submit'
               disabled={loading}
             >
