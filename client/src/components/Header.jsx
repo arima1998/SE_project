@@ -7,8 +7,6 @@ import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
 
-
-
 export default function Header() {
   const path = useLocation().pathname;
   const location = useLocation();
@@ -49,7 +47,6 @@ export default function Header() {
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
-
 
   return (
     <Navbar className="border-b-2">
@@ -117,9 +114,9 @@ export default function Header() {
         <Navbar.Link active={path === "/about"} as={'div'}>
           <Link to='/about'>About</Link>
         </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={'div'}>
+        {/* <Navbar.Link active={path === "/projects"} as={'div'}>
           <Link to='/projects'>Projects</Link>
-        </Navbar.Link>
+        </Navbar.Link> */}
       </Navbar.Collapse>
     </Navbar>
   )
