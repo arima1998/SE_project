@@ -239,7 +239,7 @@ export default function DashProfile() {
               gradientDuoTone='purpleToPink'
               className='w-full'
             >
-              Create a post
+              Create a Review
             </Button>
           </Link>
         )}
