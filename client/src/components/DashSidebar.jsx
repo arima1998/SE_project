@@ -59,7 +59,7 @@ export default function DashSidebar() {
             <Sidebar.Item
               active={tab === 'profile'}
               icon={HiUser}
-              label={currentUser.isAdmin ?'User':'Non-User'}
+              label={currentUser.isAdmin ?'Admin':'User'}
               labelColor='dark'
               as='div'
             >
