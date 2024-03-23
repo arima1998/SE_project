@@ -116,13 +116,13 @@ export default function Search() {
               onChange={handleChange}
             />
           </div>
-          <div className='flex items-center gap-2'>
+          {/* <div className='flex items-center gap-2'>
             <label className='font-semibold'>Sort:</label>
             <Select onChange={handleChange} value={sidebarData.sort} id='sort'>
               <option value='desc'>Latest</option>
               <option value='asc'>Oldest</option>
             </Select>
-          </div>
+          </div> */}
           <div className='flex items-center gap-2'>
             <label className='font-semibold'>Course Code:</label>
             <Select
